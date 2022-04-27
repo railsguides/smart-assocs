@@ -5,3 +5,12 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+
+User.create!
+
+artist = Artist.create!
+
+Song.create!(artist: artist, status: 'published')
+Song.create!(artist: artist, status: 'new')
+
